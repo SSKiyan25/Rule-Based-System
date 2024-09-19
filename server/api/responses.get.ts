@@ -1,7 +1,7 @@
 import { promises as fs } from "fs";
 import path from "path";
 
-export default defineEventHandler(async (event) => {
+export default defineEventHandler(async () => {
   try {
     const filePath = path.resolve("stores/responses.json");
     const data = await fs.readFile(filePath, "utf-8");

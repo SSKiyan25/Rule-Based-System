@@ -13,6 +13,7 @@ const fetchRules = async () => {
     const url = "/knowledge_base.json";
     const response = await fetch(url);
 
+    //const { data: response} = await useFetch('api/rules')
     if (!response.ok) {
       throw new Error("Network response was not ok");
     }
