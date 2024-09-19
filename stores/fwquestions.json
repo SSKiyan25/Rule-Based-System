@@ -1,0 +1,62 @@
+[
+  {
+    "phase": -1,
+    "condition": ["invalid"],
+    "question": "Invalid input! I'm not that intelligent yet. Quack!"
+  },
+  {
+    "phase": 1,
+    "condition": [""],
+    "question": "Quack quack! Do you want a checkup?",
+    "type": "string"
+  },
+  {
+    "phase": 1,
+    "condition": ["no", "nope", "wait"],
+    "question": "Why quack! Please say yes for me to help you.",
+    "type": "string"
+  },
+  {
+    "phase": 2,
+    "condition": ["yes", "yep"],
+    "question": "Quack! What's your temperature? In Celsius, please.",
+    "type": "number",
+    "range": [35, 39]
+  },
+  {
+    "phase": 3,
+    "condition": ["low fever", "high fever"],
+    "question": "Queck! Do you have light or heavy nasal breathing?",
+    "type": "string"
+  },
+  {
+    "phase": 4,
+    "condition": [""],
+    "question": "Quack! Do you have a headache?",
+    "type": "string"
+  },
+  {
+    "phase": 5,
+    "condition": [""],
+    "question": "Queck! Do you have a cough?",
+    "type": "string"
+  },
+  {
+    "phase": 6,
+    "condition": [""],
+    "question": "Queck! Do you have a sore throat?",
+    "type": "string"
+  },
+  {
+    "phase": 7,
+    "condition": ["cold", "not soreThroat"],
+    "question": "Quack we're almost done! Do you have an allergy to antibiotics?",
+    "type": "string"
+  },
+  {
+    "phase": 8,
+    "condition": ["done"],
+    "question": "Thank you for trusting me Quack!",
+    "type": "string"
+  }
+]

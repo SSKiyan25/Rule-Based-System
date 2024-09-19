@@ -1,0 +1,82 @@
+[
+  {
+    "phase": 2,
+    "condition": ["no fever"],
+    "response": "Oh just take a rest."
+  },
+  {
+    "phase": 2,
+    "condition": ["low fever"],
+    "response": "Oh no quack! You have a low fever!"
+  },
+  {
+    "phase": 2,
+    "condition": ["high fever"],
+    "response": "Oh my goodness! You have a HIGH fever quack! Let's proceed to the hospital immediately!"
+  },
+  {
+    "phase": 2,
+    "condition": ["invalid"],
+    "response": "What?! Are you a human?"
+  },
+  {
+    "phase": 3,
+    "condition": ["lightNasalBreathing"],
+    "response": "Quack you have a nasal discharge!"
+  },
+  {
+    "phase": 3,
+    "condition": ["heavyNasalBreathing"],
+    "response": "Quack that's tough! you have a sinus membranes swelling! We must go the Hospital so it can be treated better!"
+  },
+  {
+    "phase": 4,
+    "condition": ["headache"],
+    "response": "Quack I feel sorry for you, headache doesn't feel good!"
+  },
+  {
+    "phase": 4,
+    "condition": ["no headache"],
+    "response": "Quack, at least you don't have a headache! Just drink a lot of water, eat healthy and have a good rest!"
+  },
+  {
+    "phase": 5,
+    "condition": ["cough"],
+    "response": "Quack that's why!"
+  },
+  {
+    "phase": 5,
+    "condition": ["no cough"],
+    "response": "Phew, that would be bad quack! Just drink a lot of water, eat healthy and have a good rest!"
+  },
+  {
+    "phase": 5,
+    "condition": ["low fever", "headache", "nasal discharge", "cough"],
+    "response": "You have a cold then Quack! So terrible*"
+  },
+  {
+    "phase": 6,
+    "condition": ["cold", "not soreThroat"],
+    "response": "Quack seems like I don't have to treat you just drink a lot of water, eat healthy and have a good rest! "
+  },
+  {
+    "phase": 6,
+    "condition": ["cold", "soreThroat"],
+    "response": "Quack I have to treat you!"
+  },
+  {
+    "phase": 6,
+    "condition": ["treat"],
+    "response": "You will need a medication!"
+  },
+  {
+    "phase": 7,
+    "condition": ["give medication", "antibiotics allergy"],
+    "response": "Since you have allergy in antibiotics quack, you will have to intake Tylenol to recover!"
+  },
+  {
+    "phase": 7,
+    "condition": ["give medication", "not antibiotics allergy"],
+    "response": "Since you don't have allergy in antibiotics quack, you will have to intake Antibiotics to recover!"
+  }
+]

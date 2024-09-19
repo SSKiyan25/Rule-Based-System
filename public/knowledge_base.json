@@ -1,0 +1,52 @@
+{
+  "rules": [
+    {
+      "antecedent": ["temperature < 37"],
+      "consequent": "no fever"
+    },
+    {
+      "antecedent": ["temperature > 37", "temperature < 38"],
+      "consequent": "low fever"
+    },
+    {
+      "antecedent": ["temperature > 38"],
+      "consequent": "high fever"
+    },
+    {
+      "antecedent": ["lightNasalBreathing"],
+      "consequent": "nasal discharge"
+    },
+    {
+      "antecedent": ["heavyNasalBreathing"],
+      "consequent": "sinus membranes swelling"
+    },
+    {
+      "antecedent": ["low fever", "headache", "nasal discharge", "cough"],
+      "consequent": "cold"
+    },
+    {
+      "antecedent": ["cold", "not soreThroat"],
+      "consequent": "don't treat"
+    },
+    {
+      "antecedent": ["cold", "soreThroat"],
+      "consequent": "treat"
+    },
+    {
+      "antecedent": ["don't treat"],
+      "consequent": "don't give medication"
+    },
+    {
+      "antecedent": ["treat"],
+      "consequent": "give medication"
+    },
+    {
+      "antecedent": ["give medication", "antibiotics allergy"],
+      "consequent": "give Tylenol"
+    },
+    {
+      "antecedent": ["give medication", "not antibiotics allergy"],
+      "consequent": "give antibiotics"
+    }
+  ]
+}
