@@ -15,7 +15,5 @@ export default defineNuxtConfig({
      */
     componentDir: "./components/ui",
   },
-  routeRules: {
-    "/*": { redirect: "/" },
-  },
+  routeRules: {},
 });
