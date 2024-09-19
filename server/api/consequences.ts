@@ -3,7 +3,7 @@ import path from "path";
 
 export default defineEventHandler(async (event) => {
   console.log("Consequence Request received: ", event.node.req.method);
-  const filePath = path.resolve("stores/consequences.json");
+  const filePath = path.resolve("public/consequences.json");
   try {
     if (event.node.req.method === "GET") {
       const data = fs.readFileSync(filePath, "utf-8");

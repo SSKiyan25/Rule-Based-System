@@ -3,7 +3,7 @@ import path from "path";
 
 export default defineEventHandler(async () => {
   try {
-    const filePath = path.resolve("stores/responses.json");
+    const filePath = path.resolve("public/responses.json");
     const data = await fs.readFile(filePath, "utf-8");
     return JSON.parse(data);
   } catch (error) {

@@ -4,7 +4,7 @@ import path from "path";
 
 export default defineEventHandler(async (event) => {
   console.log("Request received: ", event.node.req.method);
-  const filePath = path.resolve("stores/facts.json");
+  const filePath = path.resolve("public/facts.json");
 
   try {
     if (event.node.req.method === "GET") {
