@@ -15,5 +15,24 @@ export default defineNuxtConfig({
      */
     componentDir: "./components/ui",
   },
-  routeRules: {},
+  routeRules: {
+    "/**": { isr: 60 },
+    // all routes (by default) will be revalidated every 60 seconds, in the background
+
+    // this page will be generated on demand and then cached permanently
+    "/static": { isr: true },
+    // this page is generated at build time and cached permanently
+    "/prerendered": { prerender: true },
+    // this page will be always fresh
+    "/dynamic": { isr: false },
+    // you can do lots more with route rules too!
+    "/redirect": { redirect: "/static" },
+
+    "/spa": { ssr: false },
+  },
+
+  runtimeConfig: {
+    nitro: { envPrefix: "VERCEL_" },
+    region: process.env.VERCEL_REGION,
+  },
 });
