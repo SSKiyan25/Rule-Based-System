@@ -92,7 +92,7 @@ export function useFacts() {
       if (tempMatch) {
         const temperature = parseFloat(tempMatch[0]);
         if (temperature < 37 && temperature > 35) return "no fever";
-        if (temperature < 38 && temperature > 37) return "low fever";
+        if (temperature <= 38 && temperature > 37) return "low fever";
         if (temperature < 41 && temperature > 38) return "high fever";
         return "not in range";
       }
